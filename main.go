@@ -1,4 +1,4 @@
-package cloudproviders
+package cloudserverproviders
 
 import (
 	"bufio"

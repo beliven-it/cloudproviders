@@ -1,4 +1,4 @@
-package cloudproviders
+package cloudserverproviders
 
 import (
 	"encoding/json"
