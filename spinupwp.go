@@ -149,7 +149,7 @@ func (s *spinupwp) ListServers() ([]ProviderServerResponse, error) {
 	return responses, nil
 }
 
-func NewSpinupwp(options ProviderOptions) Provider {
+func newSpinupwp(options ProviderOptions) Provider {
 	if options.URL == "" {
 		options.URL = "https://api.spinupwp.app/v1"
 	}

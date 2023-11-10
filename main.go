@@ -73,9 +73,9 @@ func providerRequest(method string, url string, queryParams map[string]interface
 func NewProvider(provider string, options ProviderOptions) Provider {
 	switch provider {
 	case "spinupwp":
-		return NewSpinupwp(options)
+		return newSpinupwp(options)
 	case "forge":
-		return NewForge(options)
+		return newForge(options)
 	default:
 		return nil
 	}

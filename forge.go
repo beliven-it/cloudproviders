@@ -141,7 +141,7 @@ func (f *forge) ListServers() ([]ProviderServerResponse, error) {
 	return servers, nil
 }
 
-func NewForge(options ProviderOptions) Provider {
+func newForge(options ProviderOptions) Provider {
 	if options.URL == "" {
 		options.URL = "https://forge.laravel.com/api/v1"
 	}
